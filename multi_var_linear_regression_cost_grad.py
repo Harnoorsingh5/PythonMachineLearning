@@ -11,7 +11,7 @@ print(myData.head())
 ## Normalize formula =  (value - mean) / standard deviation
 
 myData = (myData - myData.mean()) / myData.std()
-print(myData.head())
+# print(myData.head())
 
 #X = myData.loc[:,["size","bedroom"]]
 X = myData.iloc[:,0:2]
@@ -34,7 +34,7 @@ def computeCost(X,y,theta):
     return J
 
 cost = computeCost(X,y,theta)
-print(cost)
+# print(cost)
 
 def gradientDescent(X,y,theta,iters,alpha):
     cost = np.zeros(iters)
